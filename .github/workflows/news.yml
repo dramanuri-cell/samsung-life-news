@@ -2,7 +2,8 @@ name: 삼성생명 뉴스 수집
 
 on:
   schedule:
-  - cron: '0 22-15 * * *'
+- cron: '0 22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 * * *'
+
   workflow_dispatch:
 
 jobs:

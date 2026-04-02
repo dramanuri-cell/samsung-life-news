@@ -59,10 +59,10 @@ def build_html(articles):
     for a in articles:
         rows += f"""
         <tr>
-          <td>{a['date'][:16]}</td>
-          <td>{a['publisher']}</td>
+          <td style="white-space:nowrap">{a['date'][:16]}</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">{a['publisher']}</td>
           <td><a href="{a['link']}" target="_blank">{a['title']}</a></td>
-          <td>{a['desc'][:80]}...</td>
+          <td style="font-size:13px">{a['desc'][:80]}...</td>
         </tr>"""
 
     return f"""<!DOCTYPE html>
@@ -76,12 +76,10 @@ def build_html(articles):
     table {{ width: 100%; border-collapse: collapse; }}
     th {{ background: #003087; color: white; padding: 10px; text-align: left; }}
     td {{ padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }}
-    td:nth-child(2) {{ white-space: nowrap; color: #666; font-size: 13px; }}
     a {{ color: #003087; text-decoration: none; }}
     a:hover {{ text-decoration: underline; }}
     .btn {{ background: #003087; color: white; border: none; padding: 10px 20px;
             font-size: 15px; border-radius: 6px; cursor: pointer; margin-bottom: 20px; }}
-    @media print {{ .btn {{ display: none; }} }}
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>

@@ -27,6 +27,7 @@ def fetch_news():
                 "desc": desc,
                 "date": item["pubDate"]
             })
+    filtered.sort(key=lambda x: x["date"], reverse=True)
     return filtered
 
 def build_html(articles):
@@ -35,10 +36,11 @@ def build_html(articles):
     for a in articles:
         rows += f"""
         <tr>
+          <td>{a['date'][:16]}</td>
           <td><a href="{a['link']}" target="_blank">{a['title']}</a></td>
           <td>{a['desc'][:80]}...</td>
-          <td>{a['date']}</td>
         </tr>"""
+
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -48,19 +50,37 @@ def build_html(articles):
     body {{ font-family: sans-serif; max-width: 1000px; margin: 40px auto; padding: 0 20px; }}
     h1 {{ color: #003087; }}
     table {{ width: 100%; border-collapse: collapse; }}
-    th {{ background: #003087; color: white; padding: 10px; }}
+    th {{ background: #003087; color: white; padding: 10px; text-align: left; }}
     td {{ padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }}
     a {{ color: #003087; text-decoration: none; }}
     a:hover {{ text-decoration: underline; }}
+    .btn {{ background: #003087; color: white; border: none; padding: 10px 20px;
+            font-size: 15px; border-radius: 6px; cursor: pointer; margin-bottom: 20px; }}
+    @media print {{ .btn {{ display: none; }} }}
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
   <p>기준일: {today} | 총 {len(articles)}건 (스포츠 제외)</p>
-  <table>
-    <tr><th>제목</th><th>내용 요약</th><th>날짜</th></tr>
+  <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
+  <table id="news-table">
+    <tr><th>날짜</th><th>제목</th><th>내용 요약</th></tr>
     {rows}
   </table>
+  <script>
+    function downloadPDF() {{
+      const el = document.getElementById('news-table');
+      const opt = {{
+        margin: 10,
+        filename: '삼성생명뉴스_{today}.pdf',
+        image: {{ type: 'jpeg', quality: 0.98 }},
+        html2canvas: {{ scale: 2 }},
+        jsPDF: {{ unit: 'mm', format: 'a4', orientation: 'landscape' }}
+      }};
+      html2pdf().set(opt).from(el).save();
+    }}
+  </script>
 </body>
 </html>"""
 

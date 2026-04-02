@@ -4,211 +4,38 @@
   <meta charset="UTF-8">
   <title>삼성생명 뉴스</title>
   <style>
-    body { font-family: sans-serif; max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    body { font-family: sans-serif; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
     h1 { color: #003087; }
     table { width: 100%; border-collapse: collapse; }
-    th { background: #003087; color: white; padding: 10px; }
+    th { background: #003087; color: white; padding: 10px; text-align: left; }
     td { padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+    td:nth-child(2) { white-space: nowrap; color: #666; font-size: 13px; }
     a { color: #003087; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .btn { background: #003087; color: white; border: none; padding: 10px 20px;
+            font-size: 15px; border-radius: 6px; cursor: pointer; margin-bottom: 20px; }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 04월 02일 | 총 38건 (스포츠 제외)</p>
-  <table>
-    <tr><th>제목</th><th>내용 요약</th><th>날짜</th></tr>
-    
-        <tr>
-          <td><a href="http://www.newsroad.co.kr/news/articleView.html?idxno=57201" target="_blank">보험사 연봉킹, 메리츠화재 김중현 대표…1년 새 29억6천만원 챙겼다</a></td>
-          <td>홍원학 삼성생명 대표는 급여 10억600만원, 상여 10억9천600만원, 기타 근로소득 5천900만원을 포함해 총 21억6천100만원을 받았다....</td>
-          <td>Thu, 02 Apr 2026 13:02:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.fins.co.kr/news/articleView.html?idxno=108089" target="_blank">보험사 연봉킹은 메리츠 김중현…작년 29억6천만원</a></td>
-          <td>홍원학 삼성생명 대표는 급여 10억600만원, 상여 10억9천600만원, 기타근로소득 5천900만원 등 총 21억6천100만원을 받았고, 이문화...</td>
-          <td>Thu, 02 Apr 2026 12:58:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.energy-news.co.kr/news/articleView.html?idxno=224265" target="_blank">변액보험 2026년 4월 브랜드평판...미래에셋생명, 삼성생명, 한화생명 順</a></td>
-          <td>변액보험 브랜드평판 2026년 4월 빅데이터 분석결과, 1위 미래에셋생명 변액보험 2위 삼성생명 변액보험 3위 한화생명 변액보험 순으로 분석됐다...</td>
-          <td>Thu, 02 Apr 2026 12:46:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://biz.heraldcorp.com/article/10708496?ref=naver" target="_blank">생명보험협회, 전주지부 개소…상설시험장 설치</a></td>
-          <td>한화생명금융서비스 상무, 권순표 금융감독원 실장, 이태기 금융감독원 전북지원장, 김철주 생명보험협회 회장, 이경재 전주대 교수, 지광운 군산대 ...</td>
-          <td>Thu, 02 Apr 2026 11:25:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.yna.co.kr/view/AKR20260402084700002?input=1195m" target="_blank">보험사 연봉킹은 메리츠 김중현…작년 29억6천만원</a></td>
-          <td>홍원학 삼성생명 대표는 급여 10억600만원, 상여 10억9천600만원, 기타근로소득 5천900만원 등 총 21억6천100만원을 받았고, 이문화...</td>
-          <td>Thu, 02 Apr 2026 11:24:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.cbci.co.kr/news/articleView.html?idxno=565041" target="_blank">미래에셋생명, 4월 변액보험 브랜드평판 1위…2위 삼성생명·3위 한화생...</a></td>
-          <td>2위는 삼성생명, 3위는 한화생명으로 나타났다. 조사는 2026년 3월 2일부터 4월 2일까지 한 달간 수집한 변액보험 브랜드 빅데이터 1,87...</td>
-          <td>Thu, 02 Apr 2026 11:18:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202604010730279780107228" target="_blank">[더벨]문윤석 예가람저축 대표, 수익 다각화 승부수</a></td>
-          <td>우리은행 코오롱타워금융센터 센터장, 우리카드 법인영업부 본부장을 거쳤으며 이후 삼성생명 행정사법인지점 전문위원으로 재직했다. 2023년 11월부...</td>
-          <td>Thu, 02 Apr 2026 11:02:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=266784" target="_blank">변액보험 4월 브랜드평판... 1위 미래에셋생명·2위 삼성생명·3위 한화...</a></td>
-          <td>변액보험 브랜드평판 2026년 4월 빅데이터 분석결과, 1위 미래에셋생명 변액보험·2위 삼성생명 변액보험·3위 한화생명 변액보험 순으로 분석됐다...</td>
-          <td>Thu, 02 Apr 2026 10:16:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.fntoday.co.kr/news/articleView.html?idxno=381243" target="_blank">[빅데이터투데이] 변액보험 2026년 4월 브랜드평판 랭킹... 1위 미래에셋...</a></td>
-          <td>2026년 4월 변액보험 브랜드평판 순위는 미래에셋생명, 삼성생명, 한화생명, 교보생명, 메트라이프생명, 동양생명, 신한라이프, 흥국생명, KB...</td>
-          <td>Thu, 02 Apr 2026 10:00:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.newspost.kr/news/articleView.html?idxno=222097" target="_blank">DB손보, 한패스와 금융 혁신 MOU…삼성생명, 육아휴직 고객 지원 확대 [...</a></td>
-          <td>◆ 삼성생명, '저출산 극복' 노력 동참 삼성생명은 포용금융을 강화하기 위해 출산·육아휴직 고객 대상으로 보험료 지원 제도를 시행한다고 1일 밝...</td>
-          <td>Thu, 02 Apr 2026 09:50:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.inthenews.co.kr/news/article.html?no=85087" target="_blank">생명보험협회 전주지부 개설…김철주 회장 “지역 보험소비자 권익보호...</a></td>
-          <td>양길섭 상무, 금융감독원 권순표 실장, 금융감독원 이태기 전주지원장, 생명보험협회 김철주 회장, 전주대 이경재 교수, 군산대 지광운 교수, 교보...</td>
-          <td>Thu, 02 Apr 2026 09:36:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.joongangenews.com/news/articleView.html?idxno=508157" target="_blank">트럼프 대통령 '종전 선언 '촉각…국내 증시 상승 출발</a></td>
-          <td>54%) △삼성생명(+0.22%) △삼성물산(+1.28%) 등이 상승 중이고, 셀트리온(-0.24%) 등이 약세를 보이고 있다. 현대차(0.00...</td>
-          <td>Thu, 02 Apr 2026 09:24:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.popcornnews.net/news/articleView.html?idxno=117309" target="_blank">미래에셋생명 변액보험, 브랜드평판 1위…삼성생명·한화생명 뒤이어</a></td>
-          <td>이어 삼성생명 변액보험과 한화생명 변액보험 각각 2위와 3위에 선정되며 뒤를 이었다. 한국기업평판연구소는 2일 변액보험 브랜드에 대한 빅데이터 ...</td>
-          <td>Thu, 02 Apr 2026 09:18:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.wsobi.com/news/articleView.html?idxno=308965" target="_blank">변액보험 브랜드평판 4월 빅데이터 분석···1위 미래에셋생명, 2위 삼...</a></td>
-          <td>변액보험 브랜드평판 4월 빅데이터 분석결과 1위 미래에셋생명 변액보험, 2위 삼성생명 변액보험, 3위 한화생명 변액보험 순으로 분석됐다. 변액보...</td>
-          <td>Thu, 02 Apr 2026 09:08:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4407317" target="_blank">내년 규제 앞둔 기본자본 킥스…6개 보험사 50% 못 미쳐</a></td>
-          <td>다만, 직전 분기와 마찬가지로 삼성생명과 삼성화재의 기본자본 증가분 10조원을 제외하면 나머지 보험사에선 줄어든 셈이다. 삼성생명과 삼성화재는 ...</td>
-          <td>Thu, 02 Apr 2026 08:52:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.beyondpost.co.kr/view.php?ud=20260402081617529346a9e4dd7f_30" target="_blank">미래에셋생명, 변액보험 브랜드평판 2026년 4월...1위</a></td>
-          <td>2026년 4월 변액보험 브랜드평판 빅데이터 분석결과 1위 미래에셋생명 변액보험, 2위 삼성생명 변액보험, 3위 한화생명 변액보험 순으로 분석됐...</td>
-          <td>Thu, 02 Apr 2026 08:22:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4407302" target="_blank">보험업계, 계약 유지율 상승세…불완전판매도 관리</a></td>
-          <td>생보업계에서는 푸본현대생명이 0.08%로 가장 높았고 삼성생명(0.04%)과 교보생명(0.05%), 한화생명(0.04%)은 평균 수준을 보였다....</td>
-          <td>Thu, 02 Apr 2026 08:20:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.seoulfn.com/news/articleView.html?idxno=625332" target="_blank">[보험브리핑] 삼성생명, 출산·육아휴직 고객 보험료 할인 등</a></td>
-          <td>삼성생명은 1일부터 출산·육아휴직 고객을 대상으로 보험료 지원 제도를 시행한다고 밝혔다. 계약자 또는 배우자가 출산·육아휴직 중인 경우, 납입 ...</td>
-          <td>Thu, 02 Apr 2026 08:09:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://biz.heraldcorp.com/article/10708115?ref=naver" target="_blank">생명보험협회, 전주지부 개소…상설시험장 설치</a></td>
-          <td>김덕윤 삼성생명 부장 등이 개소식에서 기념촬영하고 있다. [생명보험협회 제공] 생명보험협회는 ‘전주지부 개소식’을 열었다고 2일 밝혔다. 1일 ...</td>
-          <td>Thu, 02 Apr 2026 07:58:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.fins.co.kr/news/articleView.html?idxno=108076" target="_blank">생보업계, 지난해 사업비로 21조 넘게 지출</a></td>
-          <td>생보사 중 가장 많은 사업비를 지출한 곳은 업계 1위 삼성생명(5조3,954억원)이다. 사망 관련 사업비는 7.8% 줄었지만, 건강보험 부문에서...</td>
-          <td>Thu, 02 Apr 2026 07:56:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=442063" target="_blank">미래에셋생명 1위 수성… 삼성·한화 '폭발적 성장' 이유는?</a></td>
-          <td>소비자 빅데이터 분석 결과, 미래에셋생명 변액보험이 1위를 차지하며 선두를 유지한 가운데 삼성생명과 한화생명이 가파른 상승세를 보이며 뒤를 추격...</td>
-          <td>Thu, 02 Apr 2026 07:32:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.thebigdata.co.kr/view.php?ud=20260402043738471707d270612f_23" target="_blank">미래에셋생명, 변액보험 브랜드평판 4월 빅데이터 분석 1위...삼성·한화...</a></td>
-          <td>이어 삼성생명 변액보험과 한화생명 변액보험이 뒤를 이었다. 2일 한국기업평판연구소는 17개 변액보험 브랜드에 대한 2026년 4월 빅데이터 평판...</td>
-          <td>Thu, 02 Apr 2026 07:30:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://view.asiae.co.kr/article/2026033013181590890" target="_blank">&quot;뭘 자꾸 누르라 하고 서류는 찍어서 올리래&quot;…보험금 청구하려던 김 할...</a></td>
-          <td>삼성생명은 챗봇 기반 디지털 안내 서비스를 도입했고, 한화생명은 통합 금융 플랫폼 형태의 모바일 애플리케이션(앱)을 구축했다. 손해보험업계 역시...</td>
-          <td>Thu, 02 Apr 2026 06:30:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.enetnews.co.kr/news/articleView.html?idxno=48348" target="_blank">[브랜드평판] 미래에셋생명, 변액보험 4월 1위···삼성생명·한화생명...</a></td>
-          <td>변액보험 브랜드평판 2026년 4월 빅데이터 분석결과, 1위 미래에셋생명 변액보험 2위 삼성생명 변액보험 3위 한화생명 변액보험 순으로 분석됐다...</td>
-          <td>Thu, 02 Apr 2026 06:06:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://it.chosun.com/news/articleView.html?idxno=2023092159670" target="_blank">설계사 유치경쟁에 수십조 쓴 생보사… 소비자 피해는?</a></td>
-          <td>회사별로 보면 삼성생명이 5조3953억원으로 가장 많았다. 이어 ▲한화생명 4조8971억원 ▲교보생명 2조9143억원 ▲신한라이프 2조4986억...</td>
-          <td>Thu, 02 Apr 2026 06:00:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.fetv.co.kr/news/article.html?no=216004" target="_blank">[2025 의료자문] 3대 생보사, 부지급 2111건…5건 중 1건 안 줘</a></td>
-          <td>업계 1위사 삼성생명의 부지급 건수는 900건 이상으로 가장 많았다. 유일하게 부지급 건수가 증가한 교보생명은 부지급률 역시 가장 높았다. 2일...</td>
-          <td>Thu, 02 Apr 2026 06:00:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.segye.com/newsView/20260401518785?OutUrl=naver" target="_blank">메리츠화재 대표 29억 ‘연봉킹’…직원 평균 보수 1위 ‘코리안리’ [...</a></td>
-          <td>삼성 보험계열사에선 홍원학 삼성생명 사장, 이문화 삼성화재 사장이 각각 21억6100만원, 17억5800만원을 받았다. 한화 보험계열사 중에선 ...</td>
-          <td>Thu, 02 Apr 2026 05:02:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.thefairnews.co.kr/news/articleView.html?idxno=73159" target="_blank">[심층분석] 밸류업 프로그램 관련 수혜주 리스트</a></td>
-          <td>삼성생명, 삼성화재, DB손해보험 등 보험주 또한 견조한 이익 체력과 배당 여력을 바탕으로 밸류업 수혜주 리스트의 상단을 차지하고 있다. 증권가...</td>
-          <td>Thu, 02 Apr 2026 00:00:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.aitimes.kr/news/articleView.html?idxno=39371" target="_blank">데이터브릭스, 향후 3년간 국내 데이터 및 AI 전문 인력 1만 명 양성한다</a></td>
-          <td>데이터브릭스는 삼성생명, LG유플러스, NH투자증권, LG이노텍, 카카오페이증권, 카카오스타일 등 다양한 산업 분야로 고객 기반을 확대하고 있다...</td>
-          <td>Wed, 01 Apr 2026 18:50:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=652297" target="_blank">삼성E&amp;A, 최대주주등 보통주 2만2511주 감소</a></td>
-          <td>개인별 변동 사항으로는 삼성생명보험특별계정이 2026년 3월 3일부터 2026년 3월 27일까지 장내매도와 장내매수를 통해 보통주식을 조정했다....</td>
-          <td>Wed, 01 Apr 2026 18:36:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.ibabynews.com/news/articleView.html?idxno=150132" target="_blank">[보험 트렌드] 삼성생명, 출산·육아휴직 고객 지원 확대… 포용금융 강...</a></td>
-          <td>◇ 삼성생명, 출산·육아휴직 고객 지원 확대 … 포용금융 강화 삼성생명, 출산·육아휴직 고객 지원 확대 …포용금융 강화. ⓒ삼성생명 삼성생명은 ...</td>
-          <td>Wed, 01 Apr 2026 18:32:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.srtimes.kr/news/articleView.html?idxno=200145" target="_blank">동양생명, ROE 12.5%→3.7%↓…배당도 '0'</a></td>
-          <td>농협생명(4.33%→4.82%→4.31%)과 삼성생명(5.01%→4.37%→3.91%)은 소폭 등락을 보이는 가운데, 한화생명은 2023년 4....</td>
-          <td>Wed, 01 Apr 2026 17:56:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202604010403&t=NN" target="_blank">삼성생명, 출산·육아휴직 고객 지원 확대…포용금융 강화</a></td>
-          <td>삼성생명이 출산·육아휴직 고객을 대상으로 보험료 지원 제도를 시행한다. 삼성생명은 보험료 할인과 납입 유예를 포함하는 출산·육아휴직 고객 지원책...</td>
-          <td>Wed, 01 Apr 2026 17:47:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.inews24.com/view/1956037" target="_blank">DB손보, 주총 부결에도 내부거래委 신설</a></td>
-          <td>삼성생명보험과 삼성화재 등 기존에 내부거래위원회를 설치했던 곳이 내부통제위원회로 기능을 이관하는 것을 감안하면 불필요한 조직 신설이라고 할 수 ...</td>
-          <td>Wed, 01 Apr 2026 17:28:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.s-journal.co.kr/news/articleView.html?idxno=40135" target="_blank">[요즘 보험가에선] 사망보장에 돌봄 더하는 생보사들… 장기요양 상품 ...</a></td>
-          <td>삼성생명은 2024년 '삼성 치매보험'을 내놓으면서 경도인지장애와 최경증 치매까지 보장 범위를 넓히고, 치매 장기요양 시 필요한 재가급여와 시설...</td>
-          <td>Wed, 01 Apr 2026 17:18:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.4th.kr/news/articleView.html?idxno=2109893" target="_blank">생보업계 어린이보험 보험료 3% 할인…출산·육아 지원 본격</a></td>
-          <td>포쓰저널 박소연 기자 삼성생명 삼성생명이 출산·육아 고객을 대상으로 어린이보험 보험료를 3% 할인하는 제도를 시행하며 생명보험업계의 저출산 대응...</td>
-          <td>Wed, 01 Apr 2026 17:16:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.newspim.com/news/view/20260401001294" target="_blank">생명보험협회, 전주지부 개소...전북지역 소비자 지원 강화</a></td>
-          <td>한화생명금융서비스 양길섭 상무, 금융감독원 권순표 실장, 금융감독원 이태기 전주지원장, 생명보험협회 김철주 회장, 전주대학교 이경재 교수, 군산...</td>
-          <td>Wed, 01 Apr 2026 16:57:00 +0900</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.aitimes.com/news/articleView.html?idxno=208685" target="_blank">데이터브릭스 &quot;AI 수요 급증으로 국내 비즈니스 연간 100% 성장률 달성&quot;</a></td>
-          <td>삼성생명, LG유플러스, NH투자증권, LG이노텍, 카카오페이증권, 카카오스타일 등 다양한 산업 분야로 고객 기반을 확대하고 있다고 전했다. 국...</td>
-          <td>Wed, 01 Apr 2026 16:56:00 +0900</td>
-        </tr>
+  <p>매일 오전 7시 자동 업데이트 | 스포츠 뉴스 제외</p>
+  <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
+  <table id="news-table">
+    <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
   </table>
+  <script>
+    function downloadPDF() {
+      const el = document.getElementById('news-table');
+      const opt = {
+        margin: 10,
+        filename: '삼성생명뉴스.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+      };
+      html2pdf().set(opt).from(el).save();
+    }
+  </script>
 </body>
 </html>

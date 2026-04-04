@@ -18,11 +18,29 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 04월 03일 | 총 5건 (스포츠 제외)</p>
+  <p>기준일: 2026년 04월 04일 | 총 9건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sat, 04 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">koreareport.co.kr</td>
+          <td><a href="https://www.koreareport.co.kr/news/articleView.html?idxno=50108" target="_blank">급등락 파도 탄 개인 투자자 지난주 '순매도'</a></td>
+          <td style="font-size:13px">SK이터닉스, 한화시스템, HD현대에너지, 한국항공우주, S-OIL, 대한전선, 신성이엔지, 삼성물산, 현대모비스, SK텔레콤, 삼성생명, 씨에...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 04 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">basketkorea.com</td>
+          <td><a href="https://basketkorea.com/news/newsview.php?ncode=1065543292260997" target="_blank">[WKBL 6라운드 리뷰] 뭔가 부족했던 우리은행, 그럼에도 불구하고</a></td>
+          <td style="font-size:13px">부산 BNK가 3월 30일 청주 KB한테 지면서, 우리은행이 용인 삼성생명과의 최종전을 이기면 됐기 때문. 이유는 이랬다. 우리은행이 삼성생명을...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 04 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">기타</td>
+          <td><a href="" target="_blank">[6라운드 리뷰] 캡사이신 뿌린 신한은행, ‘유종의 미’ 이어 ‘태풍의...</a></td>
+          <td style="font-size:13px">지난 2월 27일 용인 삼성생명에 50-59로 패했을 뿐, 이외의 4개 팀을 상대로 승을 챙겼다. 순위가 결정된 후 맞붙은 하나은행을 제외하면 ...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sat, 04 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">basketkorea.com</td>
@@ -49,6 +67,12 @@
         </tr>
         <tr>
           <td style="white-space:nowrap">Sat, 04 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">한국경제</td>
+          <td><a href="https://magazine.hankyung.com/business/article/202604012952b" target="_blank">“트럼프 중간선거 패배에 베팅한다면”… 삼전·닉스 대신 ‘이곳’ [...</a></td>
+          <td style="font-size:13px">리서치센터장(전무)을 역임한 정통 베테랑 애널리스트 출신이다. 국민연금과 삼성생명 자산운용컨설팅, 금융투자협회 자산운용 전문위원을 지내며 자본시...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 04 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">shinailbo.co.kr</td>
           <td><a href="https://www.shinailbo.co.kr/news/articleView.html?idxno=5007787" target="_blank">5세대 실손 도입 앞두고 보험사 '보장 공백' 선점 경쟁</a></td>
           <td style="font-size:13px">삼성생명은 경증 다빈도 질환과 고비용 중증 질환을 동시에 보장하는 담보를 앞세워 마케팅에 나섰다. KB라이프는 '실손빈틈 채움 플랜'을 구성했다...</td>
@@ -59,7 +83,7 @@
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 04월 03일.pdf',
+        filename: '삼성생명뉴스_2026년 04월 04일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

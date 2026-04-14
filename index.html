@@ -18,11 +18,23 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 04월 13일 | 총 5건 (스포츠 제외)</p>
+  <p>기준일: 2026년 04월 14일 | 총 6건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Tue, 14 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">srtimes.kr</td>
+          <td><a href="http://www.srtimes.kr/news/articleView.html?idxno=201062" target="_blank">삼성화재, 지난해 피소금액·건수 보험업계 '최다'</a></td>
+          <td style="font-size:13px">◆손해보험, 생보보다 소송 규모 커 13일 금융감독원 전자공시시스템에 따르면 2025년 생명보험 4사 (삼성생명·한화생명·교보생명·신한라이프)의...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Tue, 14 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">fetv.co.kr</td>
+          <td><a href="https://www.fetv.co.kr/news/article.html?no=216776" target="_blank">[보험금 지급 점검] 3대 생보사, 부지급 일제히 증가…삼성 66% 급증</a></td>
+          <td style="font-size:13px">업계 1위 삼성생명의 부지급 건수가 60% 이상 급증해 증가세를 주도한 가운데 부지급 사유는 약관상 면·부책과 고지의무 위반에 집중됐다. 14일...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Tue, 14 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">조선일보</td>
@@ -47,19 +59,13 @@
           <td><a href="" target="_blank">하나은행, 32%짜리 2점슛을 고집해야 했나?</a></td>
           <td style="font-size:13px">삼성생명 이해란이 4쿼터 5반칙으로 빠진 상황이었기에 상대 스위치 수비를 이용하면 골밑에서 진안이 삼성생명의 이주연을 상대로 미스매치를 발생시켰...</td>
         </tr>
-        <tr>
-          <td style="white-space:nowrap">Mon, 13 Apr 2026</td>
-          <td style="white-space:nowrap;color:#666;font-size:13px">basketkorea.com</td>
-          <td><a href="https://basketkorea.com/news/newsview.php?ncode=1065614746749888" target="_blank">[바코 인사이드] 하나은행의 루키 황윤서의 각오, “내년 시즌에는 꼭 ...</a></td>
-          <td style="font-size:13px">솔직히 말씀드리면, “KB랑 삼성생명이 좋다”는 얘기를 들었어요(웃음). 그런 이야기가 저희 학년 사이에서는 이야기가 많았어요. 그런데 ‘꼭 거...</td>
-        </tr>
   </table>
   <script>
     function downloadPDF() {
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 04월 13일.pdf',
+        filename: '삼성생명뉴스_2026년 04월 14일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

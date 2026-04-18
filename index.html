@@ -18,11 +18,23 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 04월 17일 | 총 37건 (스포츠 제외)</p>
+  <p>기준일: 2026년 04월 18일 | 총 39건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sat, 18 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">newsway.co.kr</td>
+          <td><a href="https://www.newsway.co.kr/news/view?ud=2026041710325209961" target="_blank">미래·흥국생명 내리고 흥국화재 올리고…보험사 대출금리 '희비'</a></td>
+          <td style="font-size:13px">이외에도 금리를 내린 곳은 교보생명 9.75%, 삼성생명 8.53%다. 전년 동기 대비 교보생명 0.13%포인트, 삼성생명 0.14%포인트 하락...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 18 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">swtvnews.com</td>
+          <td><a href="https://swtvnews.com/news/newsview.php?ncode=1065570968360873" target="_blank">[WKBL] 강이슬, 4년 만에 WNBA 무대 재도전…피닉스와 트레이닝 캠프 계...</a></td>
+          <td style="font-size:13px">피닉스와 트레이닝 캠프 계약을 맺었지만 강이슬은 소속팀 KB스타즈가 용인 삼성생명과의 챔피언결정전을 앞두고 있기 때문에 이번 주말 트레이닝 캠프...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sat, 18 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">xportsnews.com</td>
@@ -224,14 +236,14 @@
         <tr>
           <td style="white-space:nowrap">Fri, 17 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">fins.co.kr</td>
-          <td><a href="http://www.fins.co.kr/news/articleView.html?idxno=108238" target="_blank">중소 생보사, 보장성 보다 높은 저축성 판매 비중…이유는?</a></td>
-          <td style="font-size:13px">실제 주요 생보사들의 저축성보험 판매 비중은 삼성생명 11.2%, 한화생명 36.6%, 교보생명 0.9%, 신한라이프 18.0%, 미래에셋생명 ...</td>
+          <td><a href="http://www.fins.co.kr/news/articleView.html?idxno=108233" target="_blank">[보험사 임직원 연봉 분석 ① 직원]연봉 1억 시대 '고착'…상승세는 둔...</a></td>
+          <td style="font-size:13px">코리안리가 1억7천700만 원으로 가장 높은 연봉을 기록했고, 삼성생명(1억5천500만 원), 삼성화재해상(1억5천820만 원), 메리츠화재해상...</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">Fri, 17 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">fins.co.kr</td>
-          <td><a href="http://www.fins.co.kr/news/articleView.html?idxno=108233" target="_blank">[보험사 임직원 연봉 분석 ① 직원]연봉 1억 시대 '고착'…상승세는 둔...</a></td>
-          <td style="font-size:13px">코리안리가 1억7천700만 원으로 가장 높은 연봉을 기록했고, 삼성생명(1억5천500만 원), 삼성화재해상(1억5천820만 원), 메리츠화재해상...</td>
+          <td><a href="http://www.fins.co.kr/news/articleView.html?idxno=108238" target="_blank">중소 생보사, 보장성 보다 높은 저축성 판매 비중…이유는?</a></td>
+          <td style="font-size:13px">실제 주요 생보사들의 저축성보험 판매 비중은 삼성생명 11.2%, 한화생명 36.6%, 교보생명 0.9%, 신한라이프 18.0%, 미래에셋생명 ...</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">Fri, 17 Apr 2026</td>
@@ -251,7 +263,7 @@
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 04월 17일.pdf',
+        filename: '삼성생명뉴스_2026년 04월 18일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

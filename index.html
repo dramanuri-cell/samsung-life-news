@@ -18,11 +18,17 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 04월 18일 | 총 39건 (스포츠 제외)</p>
+  <p>기준일: 2026년 04월 19일 | 총 39건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sun, 19 Apr 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">s-journal.co.kr</td>
+          <td><a href="https://www.s-journal.co.kr/news/articleView.html?idxno=40626" target="_blank">대신증권 &quot;보험업, 실적은 선방… 손해율 상승에 업황 반등 아직&quot;</a></td>
+          <td style="font-size:13px">삼성화재와 DB손해보험은 시장 기대치에 대체로 부합하는 실적이 예상됐고, 삼성생명과 현대해상은 이를 웃도는 성적이 가능할 것으로 전망됐다. 삼성...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sun, 19 Apr 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">머니투데이</td>
@@ -251,19 +257,13 @@
           <td><a href="https://www.dailybrief.co.kr/news/articleView.html?idxno=5654" target="_blank">[줌인] 저PBR 밸류업 공시 &quot;법으로 강제&quot; vs &quot;부작용 우려&quot;</a></td>
           <td style="font-size:13px">이런 주장은 앞서 이남우 거버넌스포럼 회장의 &quot;삼성전자, 삼성생명 같은 기업은 형식적이고 부실한 공시에 그치고 있다&quot;는 지적과...</td>
         </tr>
-        <tr>
-          <td style="white-space:nowrap">Fri, 17 Apr 2026</td>
-          <td style="white-space:nowrap;color:#666;font-size:13px">thepublic.kr</td>
-          <td><a href="https://www.thepublic.kr/news/articleView.html?idxno=301439" target="_blank">삼성생명, 1분기 DC형 퇴직연금 수익률 1위</a></td>
-          <td style="font-size:13px">삼성생명이 올해 1분기 말 기준 확정기여(DC)형 퇴직연금 상품의 최근 1년 수익률에서 적립금 상위 10개 사업자 가운데 1위를 기록했다고 16...</td>
-        </tr>
   </table>
   <script>
     function downloadPDF() {
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 04월 18일.pdf',
+        filename: '삼성생명뉴스_2026년 04월 19일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

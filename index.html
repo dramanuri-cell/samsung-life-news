@@ -18,11 +18,29 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 05월 30일 | 총 41건 (스포츠 제외)</p>
+  <p>기준일: 2026년 05월 31일 | 총 43건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sun, 31 May 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">서울신문</td>
+          <td><a href="https://www.seoul.co.kr/news/sport/badminton/2026/05/31/20260531500028?wlog_tag3=naver" target="_blank">2년 만의 정상탈환 노리는 안세영…싱가포르오픈 우승컵 거머쥘까</a></td>
+          <td style="font-size:13px">‘세계 최강’ 안세영(24·삼성생명)이 지난해 우승을 놓쳤던 싱가포르오픈 정상 탈환에 도전한다. 안세영은 세계 랭킹 3위 야마구치 아카네(일본)...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sun, 31 May 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">pinpointnews.co.kr</td>
+          <td><a href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=456520" target="_blank">SK하이닉스의 추격, 삼성전자의 반격…190조 격차에 숨은 의미</a></td>
+          <td style="font-size:13px">삼성생명, HD현대중공업, 삼성물산, 현대모비스의 시총은 모두 70조원 안팎에 형성돼 있다. 특히 현대모비스는 최근 주가가 급등하며 두산에너빌리...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sun, 31 May 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">이데일리</td>
+          <td><a href="https://www.edaily.co.kr/news/newspath.asp?newsid=01170966645454496" target="_blank">안세영, '컨디션 난조' 극복하고 싱가포르오픈 결승 진출…야마구치와...</a></td>
+          <td style="font-size:13px">‘셔틀콕 여제’ 안세영(삼성생명)이 한때 천적으로 꼽히던 천위페이(중국)를 제압하고 싱가포르오픈 결승에 안착했다. 안세영.(사진=AP/뉴시스) ...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sun, 31 May 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">연합뉴스</td>
@@ -263,19 +281,13 @@
           <td><a href="https://www.spotvnews.co.kr/news/articleView.html?idxno=819744" target="_blank">안세영 나와! '왕즈이 대충격' 승승승승승승패, 日 야마구치에 4강 1-2 패...</a></td>
           <td style="font-size:13px">안세영(24, 삼성생명)과 올 시즌 여자 단식 결승 구도를 형성해온 왕즈이(2위, 중국)가 예상 밖 패배를 당하며 싱가포르오픈 결승 문턱에서 무...</td>
         </tr>
-        <tr>
-          <td style="white-space:nowrap">Sat, 30 May 2026</td>
-          <td style="white-space:nowrap;color:#666;font-size:13px">조선일보</td>
-          <td><a href="https://www.sportschosun.com/sports-news/2026-05-30/202605300100180340012082" target="_blank">'천위페이, 오랜 라이벌 AN에 도전' 中, 안세영 격돌 관심 폭발…'중국,...</a></td>
-          <td style="font-size:13px">'세계 최강' 안세영(24·삼성생명)이 천위페이(중국)와 또 한번 붙는다. 중국도 큰 관심을 보이고 있다. 안세영은 30일(이하 한국시각) 싱가...</td>
-        </tr>
   </table>
   <script>
     function downloadPDF() {
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 05월 30일.pdf',
+        filename: '삼성생명뉴스_2026년 05월 31일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

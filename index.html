@@ -18,11 +18,17 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 07월 04일 | 총 39건 (스포츠 제외)</p>
+  <p>기준일: 2026년 07월 05일 | 총 39건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sun, 05 Jul 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">newsway.co.kr</td>
+          <td><a href="https://www.newsway.co.kr/news/view?ud=2026070316012650300" target="_blank">그래도 믿을건 삼성그룹주?…삼성전기·생명에 쏠린 눈</a></td>
+          <td style="font-size:13px">삼성그룹주에 대한 투자자 관심이 높아지는 가운데 증권가에서 삼성전기와 삼성생명이 중장기 유망종목으로 제시됐다. 두 종목은 올초 이후 급등했지만 ...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sun, 05 Jul 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">fins.co.kr</td>
@@ -251,19 +257,13 @@
           <td><a href="http://www.queen.co.kr/news/articleView.html?idxno=459746" target="_blank">[오늘증시]기관 4조5000억 순매수, 삼성·하이닉스 반등에 코스피 8100선...</a></td>
           <td style="font-size:13px">삼성전자우는 10.23%, 삼성물산 6.64%, SK스퀘어 4.2%, 삼성생명 3.37%, 삼성전기 3.27%, LG에너지솔루션 2.4%, 현대...</td>
         </tr>
-        <tr>
-          <td style="white-space:nowrap">Fri, 03 Jul 2026</td>
-          <td style="white-space:nowrap;color:#666;font-size:13px">g-enews.com</td>
-          <td><a href="https://www.g-enews.com/view.php?ud=202607031338042374a9fc143920_1" target="_blank">국내 서비스 품질 ‘AI 전환’ 타고 순항...표준협회, 2026년 상반기 KS-...</a></td>
-          <td style="font-size:13px">SK텔레콤(27년 연속), 삼성전자서비스(25년 연속), 삼성생명보험(24년 연속) 등은 장기 1위 자리를 굳건히 지켰고, 지자체 중에서는 서울...</td>
-        </tr>
   </table>
   <script>
     function downloadPDF() {
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 07월 04일.pdf',
+        filename: '삼성생명뉴스_2026년 07월 05일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

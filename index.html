@@ -18,11 +18,23 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 08월 15일 | 총 24건 (스포츠 제외)</p>
+  <p>기준일: 2026년 08월 16일 | 총 26건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sun, 16 Aug 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">뉴시스</td>
+          <td><a href="https://www.newsis.com/view/NISX20260815_0003750701" target="_blank">2금융권 상반기 연봉킹은 정태영…현대카드·커머셜서 32억 수령</a></td>
+          <td style="font-size:13px">전·현직 대표 가운데서는 전영묵 전 삼성생명 대표가 인센티브 12억2700만원을 포함해 13억8300만원을 수령했다. 홍원학 삼성생명 대표는 8...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sun, 16 Aug 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">megaeconomy.co.kr</td>
+          <td><a href="https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065570104579318" target="_blank">&quot;아파트 분양은 옛말&quot;…고령인구 1123만·22%, 건설사 '운영형 디벨로퍼...</a></td>
+          <td style="font-size:13px">헬스케어 및 요양 전문 자회사를 거느린 대형 생명보험사(KB라이프·신한라이프·삼성생명 등)와 장기 안정 자금을 공급하는 자산운용사, 그리고 시공...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sun, 16 Aug 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">newsian.co.kr</td>
@@ -173,7 +185,7 @@
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 08월 15일.pdf',
+        filename: '삼성생명뉴스_2026년 08월 16일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

@@ -18,11 +18,17 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 08월 21일 | 총 11건 (스포츠 제외)</p>
+  <p>기준일: 2026년 08월 22일 | 총 12건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sat, 22 Aug 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">파이낸셜뉴스</td>
+          <td><a href="http://www.fnnews.com/news/202608211705595838" target="_blank">'삼전닉스 오디세이'에 표류하는 김대리, 구조될 방법은?[인치범의 주식...</a></td>
+          <td style="font-size:13px">[필자소개] 인치범 전무는 금융(삼성생명), IT(안랩, 한글과컴퓨터, SK커뮤니케이션즈), 유통(삼성테스코) 등의 분야에서 30년 간 일관되게...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sat, 22 Aug 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">sentv.co.kr</td>
@@ -33,7 +39,7 @@
           <td style="white-space:nowrap">Sat, 22 Aug 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">기타</td>
           <td><a href="" target="_blank">새 시즌 향해 뛰는 KBL·WKBL 16개 구단, 부상자 현황은?</a></td>
-          <td style="font-size:13px">용인 삼성생명 양해은은 조금 더 시간이 필요하다. 지난 시즌 막판 십자인대를 다친 뒤 꾸준히 재활을 이어가고 있으며, 차기 시즌 막판 복귀를 목...</td>
+          <td style="font-size:13px">용인 삼성생명 양혜은은 조금 더 시간이 필요하다. 지난 시즌 막판 십자인대를 다친 뒤 꾸준히 재활을 이어가고 있으며, 차기 시즌 막판 복귀를 목...</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">Sat, 22 Aug 2026</td>
@@ -95,7 +101,7 @@
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 08월 21일.pdf',
+        filename: '삼성생명뉴스_2026년 08월 22일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

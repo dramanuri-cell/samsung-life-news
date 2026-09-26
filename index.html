@@ -18,11 +18,35 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 09월 25일 | 총 10건 (스포츠 제외)</p>
+  <p>기준일: 2026년 09월 26일 | 총 14건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sat, 26 Sep 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">헤럴드경제</td>
+          <td><a href="https://biz.heraldcorp.com/article/10884324?ref=naver" target="_blank">10월 3~5일, 한강서 누구나 참가할 수 있는 가을운동회가 열린다</a></td>
+          <td style="font-size:13px">청담대교 하부에서는 삼성생명과 협업한 ‘핏 숍(FIT STOP)’이 운영된다. 방문객이 체력과 컨디션을 점검하고 운동 후 회복 프로그램을 체험할...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 26 Sep 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">joseilbo.com</td>
+          <td><a href="http://www.joseilbo.com/news/news_read.php?uid=576348&class=53&grp=" target="_blank">&quot;추석 끝나면 30만전자?&quot;...삼성전자, '배당 낙수효과' 증권가 전망은?</a></td>
+          <td style="font-size:13px">삼성전자가 자사주를 대거 소각하면 삼성생명과 삼성화재 등 금융계열사의 삼성전자 지분율이 높아져 지분 조정 부담이 생길 수 있기 때문이다. 이에 ...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 26 Sep 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">sportsseoul.com</td>
+          <td><a href="https://www.sportsseoul.com/news/read/1637541?ref=naver" target="_blank">日에 패해 ‘2관왕’은 무산, 안세영 단식 사상 첫 ‘2연패’ 시동…첫...</a></td>
+          <td style="font-size:13px">안세영(삼성생명)이 단체전 아쉬움을 털고 단식 ‘2연패’ 도전에 나선다. 안세영은 26일 일본 아이치현 이치노미야 시립체육관에서 열리는 2026...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 26 Sep 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">paxetv.com</td>
+          <td><a href="http://www.paxetv.com/news/articleView.html?idxno=282679" target="_blank">[한가위 금융선물-생보사] 온 가족 건강·치매·노후 함께 대비...&quot;보장...</a></td>
+          <td style="font-size:13px">[사진=한화생명] ▶ 삼성생명 '삼성 가족대표건강보험 Plus+' '삼성 가족대표건강보험 Plus+'는 실제 치료 과정에서 체감할 수 있는 보장...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Fri, 25 Sep 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">sportsworldi.com</td>
@@ -89,7 +113,7 @@
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 09월 25일.pdf',
+        filename: '삼성생명뉴스_2026년 09월 26일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }

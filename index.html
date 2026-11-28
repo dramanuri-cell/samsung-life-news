@@ -18,11 +18,41 @@
 </head>
 <body>
   <h1>📰 삼성생명 뉴스 게시판</h1>
-  <p>기준일: 2026년 11월 27일 | 총 8건 (스포츠 제외)</p>
+  <p>기준일: 2026년 11월 28일 | 총 13건 (스포츠 제외)</p>
   <button class="btn" onclick="downloadPDF()">📥 PDF 다운로드</button>
   <table id="news-table">
     <tr><th>날짜</th><th>언론사</th><th>제목</th><th>내용 요약</th></tr>
     
+        <tr>
+          <td style="white-space:nowrap">Sat, 28 Nov 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">newspim.com</td>
+          <td><a href="https://www.newspim.com/news/view/20261128000029" target="_blank">[AI프리뷰] 28일 WKBL 우리은행-하나은행전, 김단비 설욕 도전…돌아온...</a></td>
+          <td style="font-size:13px">-부천 하나은행 (1승 6패, 6위, 2연패) 하나은행은 20일 홈에서 삼성생명에 57-75로 패한 뒤 23일 인천 원정에서도 신한은행에 59-...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 28 Nov 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">press9.kr</td>
+          <td><a href="http://www.press9.kr/news/articleView.html?idxno=87165" target="_blank">삼성생명 홍원학號 3년차…순익 85% 성장, 다음 무대는 해외</a></td>
+          <td style="font-size:13px">홍원학 삼성생명 대표이사 사장이 사실상 유임되면서 해외사업 확대에 탄력이 붙을 전망이다. 취임 이후 전속 영업조직을 확충하며 미래 보험이익 기반...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 28 Nov 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">파이낸셜뉴스</td>
+          <td><a href="https://www.fnnews.com/news/202611271608163725" target="_blank">&quot;'유튜브', '종토방' 따라하다 내 돈 다 녹았네?&quot;...'시그널'과 '노이즈...</a></td>
+          <td style="font-size:13px">Bogle, Founder, The Vanguard Group)가 언급 [필자소개] 인치범 전무는 금융(삼성생명), IT(안랩, 한글과컴퓨터, ...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 28 Nov 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">basketkorea.com</td>
+          <td><a href="https://basketkorea.com/news/newsview.php?ncode=1065592437091727" target="_blank">[BK 프리뷰] 1점 차로 결정됐던 1차전, 우리은행-하나은행의 2차전은?</a></td>
+          <td style="font-size:13px">vs 용인 삼성생명 (부천체육관) : 57-75 (패) 3. 2026.11.23. vs 인천 신한은행 (인천도원체육관) : 59-63 (패) 우...</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">Sat, 28 Nov 2026</td>
+          <td style="white-space:nowrap;color:#666;font-size:13px">dailian.co.kr</td>
+          <td><a href="https://www.dailian.co.kr/news/view/1720676/?sc=Naver" target="_blank">기준금리 인상에 복잡해진 2금융권 셈법…건전성·조달 부담</a></td>
+          <td style="font-size:13px">삼성생명의 신규 채권 투자수익률은 올해 1분기 3.50%에서 2분기 3.94%, 3분기 4.48%로 높아졌다. 9월 말 보유 채권의 평균 수익률...</td>
+        </tr>
         <tr>
           <td style="white-space:nowrap">Sat, 28 Nov 2026</td>
           <td style="white-space:nowrap;color:#666;font-size:13px">stnsports.co.kr</td>
@@ -77,7 +107,7 @@
       const el = document.getElementById('news-table');
       const opt = {
         margin: 10,
-        filename: '삼성생명뉴스_2026년 11월 27일.pdf',
+        filename: '삼성생명뉴스_2026년 11월 28일.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
